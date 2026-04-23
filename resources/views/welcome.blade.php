@@ -1,23 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="lofi">
 <head>
-    <title>Chirper</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirper - Home</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-gray-100 text-center">
+<body class="min-h-screen flex flex-col bg-base-200 font-sans">
+    <nav class="navbar bg-base-100">
+        <div class="navbar-start">
+            <a href="/" class="btn btn-ghost text-xl">🐦 Chirper</a>
+        </div>
+        <div class="navbar-end gap-2">
+            <a href="#" class="btn btn-ghost btn-sm">Sign In</a>
+            <a href="#" class="btn btn-primary btn-sm">Sign Up</a>
+        </div>
+    </nav>
 
-    <h1 class="text-3xl mt-10 font-bold">🐦 Chirper</h1>
-    <p class="mt-2">Aplikasi Microblogging Sederhana</p>
+    <main class="flex-1 container mx-auto px-4 py-8">
+        <div class="max-w-2xl mx-auto">
+            <div class="card bg-base-100 shadow mt-8">
+                <div class="card-body">
+                    <div>
+                        <h1 class="text-3xl font-bold">Welcome to Chirper!</h1>
+                        <p class="mt-4 text-base-content/60">
+                            This is your brand new Laravel application. Time to make it sing (or chirp)!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <div class="mt-5">
-        <textarea class="border p-2 w-64" placeholder="Tulis sesuatu..."></textarea>
-        <br><br>
-        <button class="bg-blue-500 text-white px-4 py-2 rounded">Kirim</button>
-    </div>
-
-    <footer class="mt-10">
-        Nama: LILI MAHARA | NIM: 240170120
+    <footer class="footer footer-center p-5 bg-base-300 text-base-content text-xs">
+        <div>
+            <p>© 2026 Chirper - Built with Laravel and ❤️</p>
+        </div>
     </footer>
-
 </body>
 </html>
